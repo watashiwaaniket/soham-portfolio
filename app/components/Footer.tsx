@@ -7,7 +7,7 @@ import MagicButton from "@/app/components/MagicButton";
 const Footer = () => {
   return (
     <>
-        <div className="h-[36rem] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
+        <div className="h-[36rem] w-screen dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <div className="flex flex-col items-center align-middle">
@@ -35,13 +35,13 @@ const Footer = () => {
         </div>
         </div>
       
-    <footer className="w-full pl-60 pr-60 pt-1 pb-10 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500" id="contact">
-      <div className="flex mt-10 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light">
+    <footer className="w-full h-32 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500" id="contact">
+      <div className="flex md:flex-row flex-col justify-between items-center">
+        <p className="md:text-base text-sm md:font-normal font-light pt-6 sm:p-10">
           Copyright © 2024 Soham Bubukwar
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center md:gap-3 gap-6 pt-4 sm:p-10">
           {socialMedia.map((info) => (
             <div
               key={info.id}
