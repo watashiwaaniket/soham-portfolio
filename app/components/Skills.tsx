@@ -61,8 +61,8 @@ export default function Skills() {
 
   return (
     <section className="py-16 bg-black text-white overflow-hidden relative pt-32" ref={containerRef}>
-      <div className="container mx-auto px-40">
-        <h2 className="text-4xl sm:text-6xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-slate-800 to-slate-50 pb-10">My Skills</h2>
+      <div className="container mx-auto p-8">
+        <h2 className="text-4xl sm:text-6xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-slate-800 to-slate-50 pb-10 text-center">My Skills</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
             <div
